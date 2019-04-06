@@ -12,8 +12,8 @@ const CheckedUsers = ({ namesList }) => {
 
   return (
     <UserListTest>
-      {users.map(x => (
-        <pre>{x}, </pre>
+      {users.map((x, index) => (
+        <pre key={index}>{x}, </pre>
       ))}
     </UserListTest>
   );
