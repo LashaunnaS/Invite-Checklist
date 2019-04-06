@@ -63,7 +63,12 @@ class App extends Component {
   };
 
   componentDidMount = () => {
-    let users = JSON.parse(localStorage.getItem("names"));
+    let users;
+
+    localStorage.getItem('names')
+      ? (users = JSON.parse(localStorage.getItem('names')))
+      : (users = this.state.names);
+
     this.setState({ names: users });
   };
 
@@ -75,7 +80,7 @@ class App extends Component {
       names: [...prevState]
     });
 
-    // localStorage.setItem("names", JSON.stringify(prevState));
+    localStorage.setItem("names", JSON.stringify(prevState));
   };
 
   render() {
