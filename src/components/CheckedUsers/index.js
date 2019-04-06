@@ -8,7 +8,6 @@ const CheckedUsers = ({ namesList }) => {
     Object.values(checkedUser)[2] === true
       ? users.push(Object.values(checkedUser)[1])
       : "";
-    // console.log({users});
   });
 
   return (
