@@ -50,9 +50,9 @@ export const StyledSpan = styled.span`
     border-radius: 2px;
   }
   &::after {
-    left: -33px;
+    left: -32px;
     width: 17px;
-    height: 30px;
+    height: 28px;
     content: "${props => (props.checked ? ico : "")}";
     font-family: "FontAwesome";
   }
@@ -64,19 +64,31 @@ export const StyledSpan = styled.span`
 
 const ico = () => {
   let randomIcon = [
-    // "\f00c",
-    // "\f25b",
-    // "\f164",
-    // "\f0f3",
-    // "\f521",
-    // "\f6de",
     "✨",
     "👍🏾",
     "⚡️",
     "❗️",
     "👌🏾",
     "🔥",
-    "🌟"
+    "🌟",
+    "😁",
+    "😍",
+    "🤞🏽",
+    "👊🏽",
+    "👩🏽‍",
+    "👑",
+    "🦄",
+    "🦖",
+    "🐒",
+    "🙃",
+    "🐸",
+    "🌼",
+    "🍄",
+    "☘️",
+    "☄️",
+    "🥐",
+    "🥨",
+    "🍾"
   ];
 
   let randomValue = randomIcon[Math.floor(Math.random() * randomIcon.length)];

@@ -17,5 +17,6 @@ export const StyledHeader = styled.header`
 
   @media (max-width: 368px) {
     font-size: 1.6em;
+    margin-bottom: 1em;
   }
 `;

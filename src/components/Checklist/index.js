@@ -9,8 +9,7 @@ import {
   StyledForm
 } from "./styles.js";
 
-const Checklist = ({ namesList, handleChecked }) => {
-  return (
+const Checklist = ({ namesList, handleChecked }) => (
     <StyledForm>
       {namesList.map(user => {
         const { checked, id, name } = user;
@@ -34,6 +33,5 @@ const Checklist = ({ namesList, handleChecked }) => {
       })}
     </StyledForm>
   );
-};
 
 export default Checklist;

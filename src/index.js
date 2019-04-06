@@ -62,6 +62,11 @@ class App extends Component {
     ]
   };
 
+  componentDidMount = () => {
+    let users = JSON.parse(localStorage.getItem("names"));
+    this.setState({ names: users });
+  };
+
   handleChecked = (value, key) => {
     const prevState = this.state.names;
     const user = prevState.find(element => key === element.id);
@@ -69,6 +74,8 @@ class App extends Component {
     this.setState({
       names: [...prevState]
     });
+
+    // localStorage.setItem("names", JSON.stringify(prevState));
   };
 
   render() {
