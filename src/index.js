@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Checklist from "./components/Checklist";
 import CheckedUsers from "./components/CheckedUsers";
 
-class App extends Component {
+class App extends Component { 
   state = {
     names: [
       {
